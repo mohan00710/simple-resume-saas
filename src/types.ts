@@ -1,0 +1,45 @@
+export interface PersonalInfo {
+  fullName: string;
+  email: string;
+  phone: string;
+  location: string;
+  linkedin?: string;
+  portfolio?: string;
+}
+
+export interface Education {
+  id: string;
+  institution: string;
+  degree: string;
+  field: string;
+  startDate: string;
+  endDate: string;
+  gpa?: string;
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  position: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  current: boolean;
+  description: string;
+}
+
+export interface Skill {
+  id: string;
+  name: string;
+  category: string;
+}
+
+export interface ResumeData {
+  personalInfo: PersonalInfo;
+  summary: string;
+  education: Education[];
+  experience: Experience[];
+  skills: Skill[];
+}
+
+export type TemplateType = 'modern' | 'classic' | 'minimal' | 'professional';
