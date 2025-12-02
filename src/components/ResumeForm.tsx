@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { ResumeData, Education, Experience, Skill } from '../types';
+import type { ResumeData, Education, Experience } from '../types';
 
 interface ResumeFormProps {
   onSubmit: (data: ResumeData) => void;
